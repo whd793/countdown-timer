@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container--title {
+  font-size: 50px;
+  text-align: center;
+}
+
+.container--labels,
+.container--inputs,
+.container--buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--labels--label {
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px 10px;
+}
+
+.container--labels {
+  font-size: 25px;
+}
+
+.container--inputs--timer {
+  justify-self: center;
+  align-self: center;
+  border: none;
+  font-size: 50px;
+  width: 90px;
+  height: 50px;
+  text-align: center;
+}
+.container--buttons {
+  gap: 25px;
+}
+.container--button {
+  width: 48%;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.container__inputs--colon {
+  font-size: 35px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

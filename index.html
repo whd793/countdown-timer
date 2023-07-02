@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown timer</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <span class="container--title">Countdown Timer</span>
+      <div class="container--labels">
+        <p class="container--labels--label">Hours</p>
+        <p class="container--labels--label">Minutes</p>
+        <p class="container--labels--label">Seconds</p>
+      </div>
+      <div class="container--inputs">
+        <input
+          class="container--inputs--timer hours"
+          type="number"
+          maxlength="2"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0,2)"
+        />
+        <p class="container__inputs--colon">:</p>
+
+        <input
+          class="container--inputs--timer minutes"
+          type="number"
+          maxlength="2"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0,2)"
+        />
+        <p class="container__inputs--colon">:</p>
+
+        <input
+          class="container--inputs--timer seconds"
+          type="number"
+          maxlength="2"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0,2)"
+        />
+      </div>
+
+      <div class="container--buttons">
+        <button class="container--button start">Start</button>
+        <button class="container--button stop">Stop</button>
+        <button class="container--button reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
